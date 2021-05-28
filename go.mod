@@ -1,3 +1,3 @@
-module github.com/Brotchu/maze
+module github.wtf/Brotchu/maze
 
 go 1.15

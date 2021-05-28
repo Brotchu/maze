@@ -1,7 +1,19 @@
 package main
 
-import "os"
+import (
+	"fmt"
+	"log"
+	"os"
+
+	"github.wtf/Brotchu/maze"
+)
 
 func main() {
-	maze.loadMaze(os.Args[1])
+	maze, err := maze.LoadMaze(os.Args[1])
+	if err != nil {
+		log.Fatal(err)
+	}
+
+	fmt.Println(maze)
+
 }
